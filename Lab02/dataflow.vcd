@@ -1,0 +1,128 @@
+$date
+	Sun May  8 20:34:28 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Lab2_4_bit_sub $end
+$var wire 1 ! bout $end
+$var wire 4 " D [3:0] $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$var reg 1 % bin $end
+$scope module M $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var wire 4 ( D [3:0] $end
+$var wire 4 ) G [3:0] $end
+$var wire 4 * P [3:0] $end
+$var wire 4 + Q [3:0] $end
+$var wire 1 % bin $end
+$var wire 1 ! bout $end
+$var wire 4 , C [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1111 ,
+b11 +
+b1100 *
+b1100 )
+b0 (
+b1100 '
+b0 &
+1%
+b1100 $
+b0 #
+b0 "
+1!
+$end
+#30
+b1101 ,
+1!
+b1100 +
+b10 )
+b1 "
+b1 (
+b11 *
+b10 $
+b10 '
+b1 #
+b1 &
+#60
+b1001 ,
+b1010 +
+b100 )
+b11 "
+b11 (
+b101 *
+b110 $
+b110 '
+b11 #
+b11 &
+#90
+b1 +
+b1010 )
+b101 "
+b101 (
+b1110 *
+b100 ,
+0%
+b1011 $
+b1011 '
+b101 #
+b101 &
+#120
+b10 +
+b1000 )
+b111 "
+b111 (
+b1101 *
+b1 ,
+1%
+b1010 $
+b1010 '
+b111 #
+b111 &
+#150
+0!
+b110 +
+b1 )
+b1000 "
+b1000 (
+b1001 *
+b1110 ,
+0%
+b1 $
+b1 '
+b1000 #
+b1000 &
+#180
+b1000 ,
+b10 +
+b100 )
+b1011 "
+b1011 (
+b1101 *
+b110 $
+b110 '
+b1011 #
+b1011 &
+#210
+1!
+b1111 +
+b0 )
+b1111 "
+b1111 (
+b0 *
+b1111 ,
+1%
+b1111 $
+b1111 '
+b1111 #
+b1111 &
+#240

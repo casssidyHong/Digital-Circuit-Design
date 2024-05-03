@@ -1,0 +1,126 @@
+$date
+	Sun May  8 18:34:12 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Lab2_converter_4bit $end
+$var wire 1 ! v $end
+$var wire 4 " B [3:0] $end
+$var reg 4 # E [3:0] $end
+$scope module M0 $end
+$var wire 4 $ E [3:0] $end
+$var wire 4 % n [3:0] $end
+$var wire 1 ! v $end
+$var wire 4 & B [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101 &
+b1111 %
+b0 $
+b0 #
+b101 "
+0!
+$end
+#50
+b110 "
+b110 &
+b1110 %
+b1 #
+b1 $
+#100
+b111 "
+b111 &
+b1101 %
+b10 #
+b10 $
+#150
+1!
+b0 "
+b0 &
+b1100 %
+b11 #
+b11 $
+#200
+1!
+b1 "
+b1 &
+b1011 %
+b100 #
+b100 $
+#250
+b10 "
+b10 &
+b1010 %
+b101 #
+b101 $
+#300
+b11 "
+b11 &
+b1001 %
+b110 #
+b110 $
+#350
+b100 "
+b100 &
+b1000 %
+b111 #
+b111 $
+#400
+b101 "
+b101 &
+b111 %
+b1000 #
+b1000 $
+#450
+b110 "
+b110 &
+b110 %
+b1001 #
+b1001 $
+#500
+b111 "
+b111 &
+b101 %
+b1010 #
+b1010 $
+#550
+b1000 "
+b1000 &
+b100 %
+b1011 #
+b1011 $
+#600
+1!
+b1001 "
+b1001 &
+b11 %
+b1100 #
+b1100 $
+#650
+0!
+b1010 "
+b1010 &
+b10 %
+b1101 #
+b1101 $
+#700
+0!
+b1011 "
+b1011 &
+b1 %
+b1110 #
+b1110 $
+#750
+b1100 "
+b1100 &
+b0 %
+b1111 #
+b1111 $
+#800

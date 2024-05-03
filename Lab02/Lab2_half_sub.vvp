@@ -1,0 +1,72 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7f8af3a04900 .scope module, "t_Lab2_half_sub" "t_Lab2_half_sub" 2 1;
+ .timescale 0 0;
+v0x6000009b4240_0 .var "a", 0 0;
+v0x6000009b42d0_0 .var "b", 0 0;
+v0x6000009b4360_0 .net "bout", 0 0, L_0x6000010b4000;  1 drivers
+v0x6000009b43f0_0 .net "diff", 0 0, L_0x6000010b40e0;  1 drivers
+S_0x7f8af3a04d40 .scope module, "M1" "Lab2_half_sub_gatelevel" 2 6, 3 1 0, S_0x7f8af3a04900;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "diff";
+    .port_info 3 /OUTPUT 1 "bout";
+L_0x6000010b4000/d .functor AND 1, L_0x6000010b4070, v0x6000009b42d0_0, C4<1>, C4<1>;
+L_0x6000010b4000 .delay 1 (2,2,2) L_0x6000010b4000/d;
+L_0x6000010b4070 .functor NOT 1, v0x6000009b4240_0, C4<0>, C4<0>, C4<0>;
+L_0x6000010b40e0/d .functor XOR 1, v0x6000009b4240_0, v0x6000009b42d0_0, C4<0>, C4<0>;
+L_0x6000010b40e0 .delay 1 (4,4,4) L_0x6000010b40e0/d;
+v0x6000009b81b0_0 .net "a", 0 0, v0x6000009b4240_0;  1 drivers
+v0x6000009b4000_0 .net "b", 0 0, v0x6000009b42d0_0;  1 drivers
+v0x6000009b4090_0 .net "bout", 0 0, L_0x6000010b4000;  alias, 1 drivers
+v0x6000009b4120_0 .net "diff", 0 0, L_0x6000010b40e0;  alias, 1 drivers
+v0x6000009b41b0_0 .net "w1", 0 0, L_0x6000010b4070;  1 drivers
+    .scope S_0x7f8af3a04900;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x6000009b4240_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x6000009b42d0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x6000009b4240_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x6000009b42d0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x6000009b4240_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x6000009b42d0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x6000009b4240_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x6000009b42d0_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x7f8af3a04900;
+T_1 ;
+    %delay 40, 0;
+    %vpi_call 2 15 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x7f8af3a04900;
+T_2 ;
+    %vpi_call 2 19 "$dumpfile", "Lab2_half_sub.vcd" {0 0 0};
+    %vpi_call 2 20 "$dumpvars" {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "t_Lab2_half_sub.v";
+    "Lab2_half_sub_gatelevel.v";
